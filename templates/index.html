@@ -40,10 +40,12 @@
                 <tr>
                     <th>지역</th>
                     <th>위치</th>
+                    <th>시간</th>
+                    <th>URL</th>
                 </tr>
             </thead>
             <tbody id="data-table">
-                
+
             </tbody>
         </table>
     </div>
@@ -57,7 +59,7 @@
                     var tableBody = $("#data-table");
                     tableBody.empty(); // Clear existing data
                     data.forEach(function(row) {
-                        var newRow = "<tr><td>" + row.region + "</td><td>" + row.location + "</td></tr>";
+                        var newRow = "<tr><td>" + row.region + "</td><td>" + row.location + "</td><td>" + row.time + "</td><td>" + row.URL + "</td></tr>";
                         tableBody.append(newRow);
                     });
                 }
