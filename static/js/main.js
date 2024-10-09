@@ -15,7 +15,6 @@ $(document).ready(function() {
         });
     }
 
-    // 10초마다 데이터 업데이트
     setInterval(updateData, 5000);
 
     // 페이지 로드 시 초기 데이터 업데이트

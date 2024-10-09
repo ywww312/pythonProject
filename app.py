@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template
 import os
-import re  # 정규 표현식 모듈
+import re
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ def index():
 
 @app.route('/data')
 def get_data():
-    data_dir = 'data'  # 데이터 파일들이 위치한 디렉토리
+    data_dir = 'data'
     data_list = []
 
     for filename in os.listdir(data_dir):

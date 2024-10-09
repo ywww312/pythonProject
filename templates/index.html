@@ -64,7 +64,6 @@
                     var tableBody = $("#data-table");
                     tableBody.empty(); // 기존 데이터 삭제
                     data.forEach(function(row) {
-                        // URL을 클릭 가능하게 만듦
                         var newRow = "<tr><td>" + row.region + "</td><td>" + row.location + "</td><td>" + row.time + "</td><td><a href='" + row.URL + "' target='_blank'>링크</a></td></tr>";
 
                         tableBody.append(newRow);
@@ -74,7 +73,7 @@
         }
         $(document).ready(function() {
             fetchData(); // 초기 데이터 가져오기
-            setInterval(fetchData, 10000); // 10초마다 새로운 데이터 가져오기
+            setInterval(fetchData, 5000);
         });
     </script>
 </body>
